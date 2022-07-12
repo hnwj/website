@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>一个不知名的管理网站</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mine.css">
+</head>
+<body>
+    <!--导航-->
+    <nav class="navbar navbar-default ">
+        <div class="container">
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">系统管理</a>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ">
+                    <li class="active"><a href="index.html"><span
+                                class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a> </li>
+                    <li><a href="user_list.html"><span
+                                class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a> </li>
+                    <li><a href="content.html"><span
+                                class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a>
+                    </li>
+                    <li><a href="tag.html"><span
+                                class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li><a href="index.html"><span
+                                        class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a>
+                            </li>
+                            <li><a href="index.html"><span
+                                        class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a>
+                            </li>
+                            <li><a href="index.html"><span
+                                        class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a>
+                            </li>
+                            <li><a href="index.html"><span
+                                        class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a>
+                            </li>
+                            <li><a href="index.html"><span
+                                        class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#bbs"><span
+                                class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a> </li>
+                </ul>
+            </div>
+            <!--导航-->
+        </div>
+    </nav>
+    <!--导航-->
+    <!--警告框-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4>一首好听的诗歌</h4>
+                    <p>镇上那条小河 离我家不近也不远 那十里河堤上 总会响着沙沙的脚步 流水接纳了两岸的柳絮 河堤弯曲着转向集市 拱桥、坐着游客的小船 陷在摇曳的树影里
+                        我又回到了小镇 闻着熟悉的草木气息 几间老房依稀拱着梦想 青春在岁月里变老 而不变的是小河潺潺的流水 淡...</p>
+                    <p>
+                        <button type="button" class="btn btn-danger">点我</button>
+                        <button type="button" class="btn btn-default"
+                            data-dismiss="alert">关闭</button>
+                    </p>
+                </div>
+            </div>
+            <!--警告框-->
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">网站统计标题</div>
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>统计项目</th>
+                                    <th>昨日</th>
+                                    <th>今日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>登录人数</td>
+                                    <td>200</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>昨日发帖</td>
+                                    <td>200</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>今日发帖</td>
+                                    <td>200</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">网站热帖</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;
+                                <a href="index.html">我喜欢你，就像这太阳一样，每天都会升起....<small
+                                        class="pull-right">2021-11-11</small></a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;
+                                <a href="index.html">我想要的很简单：肚里有墨，手里有活，卡里有钱，未来有你<small
+                                        class="pull-right">2021-11-11</small></a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;
+                                <a href="index.html">我怀疑你的本质是一本书，不然我怎么越看越想睡。<small
+                                        class="pull-right">2021-11-11</small></a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;
+                                <a href="index.html">想对你撒娇，想向你证明无论这个世界多么严苛我都偏爱你<small
+                                        class="pull-right">2021-11-11</small></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">今日访客统计</div>
+                    <div class="panel-body">
+                        <canvas id="canvas" class="col-md-12">
+
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">服务器状态</div>
+                    <div class="panel-body">
+                        <p>内存使用率40%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped"
+                                role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 40%">
+                            </div>
+                        </div>
+                        <p>数据库使用率20%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped"
+                                role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 20%">
+                            </div>
+                        </div>
+                        <p>磁盘使用率60%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped"
+                                role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 60%">
+                            </div>
+                        </div>
+                        <p>CPU使用率80%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped"
+                                role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">团队留言板</div>
+                    <div class="panel-body">
+                        <div class="col-md-7">
+                            <div class="media well">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object wh64" src="img/a.jpg" alt="哈哈">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">哈哈</h4>
+                                    希望你如锦绣山河，万人向往，却属于我。
+                                </div>
+                            </div>
+                            <div class="media well">
+                                <div class="media-body text-right">
+                                    <h4 class="media-heading">啦啦</h4>
+                                    一生平淡无奇，偏偏遇见了你，我的心便波澜四起。
+                                </div>
+                                <div class="media-right">
+                                    <a href="#">
+                                        <img class="media-object wh64" src="img/b.jpg" alt="啦啦">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media well">
+                                <div class="media-body text-right">
+                                    <h4 class="media-heading">啦啦</h4>
+                                    希望以后有你的生活，温柔，有趣，不必太激烈，三餐，四季，不必太匆忙
+                                </div>
+                                <div class="media-right">
+                                    <a href="#">
+                                        <img class="media-object wh64" src="img/b.jpg" alt="啦啦">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media well">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object wh64" src="img/a.jpg" alt="哈哈">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">哈哈</h4>
+                                    我的缺点很多，但只有一点让我无法释怀，不是别的，就是缺点你。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="text1">请输入留言内容：</label>
+                                    <textarea class="form-control" id="text1" rows="5" cols="10"
+                                        placeholder="请输入留言内容"></textarea>
+                                    <button type="submit"
+                                        class="btn btn-default mar_t15">留言</button>
+                                </div>
+                            </form>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">团队联系手册</div>
+                                <div class="panel-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">王俊凯：<span
+                                                class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;123456789
+                                        </li>
+                                        <li class="list-group-item">王源：<span
+                                                class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;123456789
+                                        </li>
+                                        <li class="list-group-item">易烊千玺：<span
+                                                class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;123456789
+                                        </li>
+                                        <li class="list-group-item">周深：<span
+                                                class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;123456789
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright&nbsp; 2021-2022&nbsp; ************* </p>
+            </div>
+        </div>
+    </footer>
+    <!--footer-->
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
